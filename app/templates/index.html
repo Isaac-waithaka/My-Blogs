@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+<!-- Styles block -->
+
+{%block styles%}
+    {{ super() }}
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{%endblock%}
+<!-- Content block -->
+{%block content%}
+<div class="jumbotron text-center" style="background-color: #677dfa; color: #fff; padding: 55px 25px; font-family: 'Monoton', cursive;">
+    <h1>Blogging App</h1>
+</div>
+<div class="container" style="padding-bottom: 20px;">
+    <a href="{{url_for('main.new_blog')}}" class="btn btn-success">Create blog</a>
+</div>
+
+<div class="container" style= "font-family: 'Cormorant Upright', serif;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Travel Blogs</h3>
+                <p>Want to comment on travelling in just a few words, welcome.</p>
+                <a href="{{url_for('main.interview_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Fitness Blogs</h3>
+                <p>Want to talk about fitness, you're in the right place.</p>
+                <a href="{{url_for('main.product_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Music Blogs</h3>
+                <p>Want to talk about music, step right up and begin.</p>
+                <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

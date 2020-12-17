@@ -1,0 +1,12 @@
+.jumbotron {
+    background-color: #41c9ff;
+    color: rgb(0, 9, 93);
+    padding: 100px 25px;
+    font-family: Quikhand;
+    
+}
+.navbar {
+    margin-bottom: 0;
+    font-family: 'Ranga', cursive;
+    font-size: 40px;
+}
