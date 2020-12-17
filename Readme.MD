@@ -43,7 +43,7 @@ None
 * Postgres
 * pip
 ## Support and contact details
-Contact me on waithakaisaac2016@@gmail.com
+Contact me on waithakaisaac2016@gmail.com
 ### License
 MIT
 Copyright (c) 2020 **Isaac Waithaka**
